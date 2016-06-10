@@ -148,19 +148,19 @@ class TestPetShop < Minitest::Test
     assert_equal(count, 0)
   end
 
-  # def test_add_pet_to_customer
-  #   customer = @customers[0]
-  #   add_pet_to_customer(customer, @new_pet)
-  #   assert_equal(customer_pet_count(customer),1)
-  # end
+  def test_add_pet_to_customer
+    customer = @customers[0]
+    add_pet_to_customer(customer, @new_pet)
+    assert_equal(customer_pet_count(customer),1)
+  end
 
   #OPTIONAL
 
-  # def test_customer_can_afford_pet__insufficient_funds
-  #   customer = @customers[1]
-  #   can_buy_pet = customer_can_afford_pet(customer, @new_pet)
-  #   assert_equal(can_buy_pet, false)
-  # end
+  def test_customer_can_afford_pet__insufficient_funds
+    customer = @customers[1]
+    can_buy_pet = customer_can_afford_pet(customer, @new_pet)
+    assert_equal(can_buy_pet, false)
+  end
 
   # def test_customer_can_afford_pet__sufficient_funds
   #   customer = @customers[0]
